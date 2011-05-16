@@ -1,0 +1,2 @@
+module DbTemplatesHelper
+end

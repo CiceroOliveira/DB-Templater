@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Body:</b>
+  <%= @db_template.body %>
+</p>
+
+<p>
+  <b>Path:</b>
+  <%= @db_template.path %>
+</p>
+
+<p>
+  <b>Format:</b>
+  <%= @db_template.format %>
+</p>
+
+<p>
+  <b>Locale:</b>
+  <%= @db_template.locale %>
+</p>
+
+<p>
+  <b>Handler:</b>
+  <%= @db_template.handler %>
+</p>
+
+<p>
+  <b>Partial:</b>
+  <%= @db_template.partial %>
+</p>
+
+
+<%= link_to 'Edit', edit_db_template_path(@db_template) %> |
+<%= link_to 'Back', db_templates_path %>

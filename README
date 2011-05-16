@@ -1,0 +1,3 @@
+== DB Templater
+
+DB Templater allows you to create rails templates in a mongodb database.

@@ -1,0 +1,33 @@
+<h1>Listing db_templates</h1>
+
+<table>
+  <tr>
+    <th>Body</th>
+    <th>Path</th>
+    <th>Format</th>
+    <th>Locale</th>
+    <th>Handler</th>
+    <th>Partial</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @db_templates.each do |db_template| %>
+  <tr>
+    <td><%= db_template.body %></td>
+    <td><%= db_template.path %></td>
+    <td><%= db_template.format %></td>
+    <td><%= db_template.locale %></td>
+    <td><%= db_template.handler %></td>
+    <td><%= db_template.partial %></td>
+    <td><%= link_to 'Show', db_template %></td>
+    <td><%= link_to 'Edit', edit_db_template_path(db_template) %></td>
+    <td><%= link_to 'Destroy', db_template, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Db template', new_db_template_path %>
